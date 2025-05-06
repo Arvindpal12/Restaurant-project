@@ -10,7 +10,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star_rate" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<!--     Plese use a bootstrap CDN link min.css and  min.js other wise don't work a website -->
 
 </head>
 
@@ -22,11 +21,11 @@
                 <a class="navbar-brand" href="#" id="logo"><img src="./images/food serv.jpg" alt="" width="30px"> A
                     <span>Restaurent</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span><img src="" alt=""></span>
+                    data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                         </li>
@@ -50,7 +49,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="btn"><a href="#"><button>Book a Table</button></a></div>
+                <div id="btn" class="ms-3"><a href="#book-table"><button>Book a Table</button></a></div>
             </div>
         </nav>
         <!-- nav end -->
@@ -58,20 +57,18 @@
 
         <!-- home section  -->
         <section class="home" id="home">
-            <div class="content">
-                <h3>Enjoy Your Healthy
+    <div class="content">
+                <h3 class="ms-3">Enjoy Your Healthy
                     <br>Delicious Food
                 </h3>
-                <p>
+                <p class="ms-3">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias odit aliquam accusantium iste.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nobis.
                 </p>
-                <a href="#" class="btn">Order Now</a>
+                <a href="#" class="btn ms-3">Order Now</a>
             </div>
             <div class="img">
                 <img src="./images/manue2.png" alt="">
-
-
             </div>
         </section>
 
@@ -80,7 +77,7 @@
     </div>
     <div class="container" id="Dishe">
         <h1 class="text-center">DISHES</h1>
-        <div class="row" style="margin-top: 50px;">
+        <div class="row mt-5">
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card ">
                     <img src="./images/mix_veg-removebg-preview.png" alt="">
@@ -232,21 +229,22 @@
         <h1 class="text-center">MENU</h1>
         <div class="row" style="margin-top: 50px;">
             <div class="col-md-6 py-3 py-md-0">
-                <p style="margin-top: 30px;"><img src="/images/fryi momo.jpg" alt="" width="50px"><span>Fryi
+                <p class="d-flex align-items-center mt-3"><img src="/images/fryi momo.jpg" alt="" width="50px"><span class="ms-2">Fryi
                         Momo</span>Lorem
                     ipsum dolor sit amet consectetur adipisicing elit. !</p>
-                <p style="margin-top: 30px;"><img src="./images/dec13-removebg-preview.png" alt=""
-                        width="50px"><span>Malsocri</span>Lorem
+                <p class="d-flex align-items-center mt-3"><img src="./images/dec13-removebg-preview.png" alt=""
+                        width="50px"><span class="ms-2">Malsocri</span>Lorem
                     ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p style="margin-top: 30px;"><img src="./images/greek salad.jpg" alt="" width="50px"> <span>Greek
+                <p class="d-flex align-items-center mt-3"><img src="./images/greek salad.jpg" alt="" width="50px"> <span class="ms-2">Greek
                         Salad</span>Lorem ipsum dolor sit amet, consectetur adipisicing ?</p>
-                <p style="margin-top: 30px;"><img
+                <p class="d-flex align-items-center mt-3"><img
                         src="./images/kadai-paneer-gravy-recipe-step-by-step-instructions_panir-removebg-preview.png"
-                        alt="" width="50px"><span>Saahi Paneer</span>Lorem ipsum
+                        alt="" width="50px"><span class="ms-2">Saahi Paneer</span>Lorem ipsum
                     dolor sit amet consectetur adipisicing elit..</p>
             </div>
             <div class="col-md-6 py-3 py-md-0">
-                <p style="margin-top: 30px;"><img src="./images/noodles-removebg-preview.png" alt=""
+                <p class="d-flex align-items-center mt-3"><img src="./images/noodles-removebg-preview.png" alt=""
+
                         width="50px"><span>Noodle</span>Lorem ipsum dolor, sit amet consectetur </p>
                 <p style="margin-top: 30px;"><img src="./images/plao.jpg" alt="" width="50px"><span>Plao</span>Lorem
                     ipsum
@@ -324,18 +322,18 @@
         <h1 class="text-center">BOOK A TABLE</h1>
         <div class="row">
             <div class="col-md-4 py-3 py-md-0">
-                <input type="text" class="form control form control" placeholder="Name">
-                <input type="Date" class="form control form control" placeholder="Date">
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="date" class="form-control" placeholder="Date">
 
             </div>
             <div class="col-md-4 py-3 py-md-0">
-                <input type="email" class="form control form control" placeholder="Email">
-                <input type="time" class="form control form control" placeholder="Time">
+                <input type="email" class="form-control" placeholder="Email">
+                <input type="time" class="form-control" placeholder="Time">
 
             </div>
             <div class="col-md-4 py-3 py-md-0">
-                <input type="number" class="form control form control" placeholder="Phone">
-                <input type="text" class="form control form control" placeholder="# Of People">
+                <input type="number" class="form-control" placeholder="Phone">
+                <input type="text" class="form-control" placeholder="# Of People">
             </div>
         </div>
         <div class="form-group" style="margin-top: 30px;">
@@ -395,7 +393,7 @@
         <div class="form-group" style="margin-top: 30px;">
             <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
         </div>
-        <div id="btnable" class="text-center"><button>Massage</button></div>
+        <div id="btnable" class="text-center"><button>Message</button></div>
     </div>
     <footer id="footer" style="margin-top: 50px;">
         <div class="footer-top">
@@ -406,7 +404,7 @@
                         <p>
                             U.S.A <br>
                             CANADA <br>
-                            MESICO <br>
+                            MEXICO <br>
                         </p>
                         <strong>Phone: <strong>+000000000078</strong></strong><br>
                         <strong>Email: <strong>inAk-Restaurent.com</strong></strong>
